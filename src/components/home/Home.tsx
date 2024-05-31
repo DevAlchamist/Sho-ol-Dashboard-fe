@@ -12,6 +12,7 @@ import Link from "next/link";
 import React from "react";
 import Timeline from "../Timeline";
 import Footer from "../Footer";
+import Pricing from "../Pricing";
 
 const HomePage = () => {
   return (
@@ -83,6 +84,7 @@ const HomePage = () => {
       </Box>
       <Services />
       <Timeline />
+      <Pricing />
       <Footer />
     </Box>
   );
