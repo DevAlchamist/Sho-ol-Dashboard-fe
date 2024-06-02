@@ -13,6 +13,7 @@ import React from "react";
 import Timeline from "../Timeline";
 import Footer from "../Footer";
 import Pricing from "../Pricing";
+import Features from "../Resuable/Features";
 
 const HomePage = () => {
   return (
@@ -84,6 +85,7 @@ const HomePage = () => {
       </Box>
       <Services />
       <Timeline />
+      <Features />
       <Pricing />
       <Footer />
     </Box>
