@@ -144,7 +144,7 @@ const Services: React.FC = () => {
           {ServicesData.map((item, index) => (
             <motion.div
               key={index}
-              className="min-w-[450px] h-auto bg-white rounded-xl p-7"
+              className="min-w-[450px] h-[450px] bg-white rounded-xl p-7"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
