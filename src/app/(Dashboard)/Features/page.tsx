@@ -46,11 +46,11 @@ const Page = () => {
           <br className="lg:block" /> and finance
         </h2>
       </div>
-      <div className="container mx-auto flex md:flex-row items-start">
+      <div className=" w-full flex md:flex-row items-center">
         <div className="w-full  p-4">
           <div className=" grid border divide-x divide-y rounded-xl overflow-hidden sm:grid-cols-1 lg:divide-y-0 lg:grid-cols-2 xl:grid-cols-2">
             <div className="relative group bg-white transition hover:z-[1] hover:shadow-2xl">
-              <div className="relative p-8 space-y-8">
+              <div className="relative p-6 space-y-6">
                 <img
                   src="https://tailus.io/sources/blocks/stacked/preview/images/avatars/burger.png"
                   className="w-10"
@@ -78,7 +78,7 @@ const Page = () => {
               </div>
             </div>
             <div className="relative group bg-white transition hover:z-[1] hover:shadow-2xl">
-              <div className="relative p-8 space-y-8">
+              <div className="relative p-6 space-y-6">
                 <img
                   src="https://tailus.io/sources/blocks/stacked/preview/images/avatars/trowel.png"
                   className="w-10"
@@ -106,7 +106,7 @@ const Page = () => {
               </div>
             </div>
             <div className="relative group bg-white transition hover:z-[1] hover:shadow-2xl">
-              <div className="relative p-8 space-y-8">
+              <div className="relative p-6 space-y-6">
                 <img
                   src="https://tailus.io/sources/blocks/stacked/preview/images/avatars/package-delivery.png"
                   className="w-10"
@@ -134,7 +134,7 @@ const Page = () => {
               </div>
             </div>
             <div className="relative group bg-gray-100 transition hover:z-[1] hover:shadow-2xl lg:hidden xl:block">
-              <div className="relative p-8 space-y-8 border-dashed rounded-lg transition duration-300 group-hover:bg-white group-hover:border group-hover:scale-90">
+              <div className="relative p-6 space-y-6 border-dashed rounded-lg transition duration-300 group-hover:bg-white group-hover:border group-hover:scale-90">
                 <img
                   src="https://tailus.io/sources/blocks/stacked/preview/images/avatars/metal.png"
                   className="w-10"
@@ -166,7 +166,7 @@ const Page = () => {
         </div>
 
         {/* Right side: Image */}
-        <div className="w-full -mr-[100px] p-4 flex justify-center">
+        <div className="w-full  overflow-hidden -mr-[100px] p-4 flex justify-center">
           <Image
             width={2400}
             height={2400}
