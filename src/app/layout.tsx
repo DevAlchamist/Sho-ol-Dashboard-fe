@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import img from "../../../../public/Dashboard.png"; // Imported image for Open Graph metadata
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,8 +10,6 @@ export const metadata: Metadata = {
   description: "Comprehensive school dashboard website offering features like student records, event management, and more.",
   keywords: "school management, student records, event management, Sho-ol, dashboard, education platform",
   abstract: "Sho-ol is a school management platform designed to streamline administrative tasks, student records, and scheduling.",
-  viewport: "width=device-width, initial-scale=1.0",
-  themeColor: "#4CAF50", // Custom theme color for the website
 
   // Open Graph Metadata (used by Facebook, LinkedIn, etc.)
   openGraph: {
