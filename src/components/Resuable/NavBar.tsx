@@ -1,4 +1,4 @@
-import { Box, Button, Drawer, IconButton } from "@mui/material";
+import { Box, Button, Divider, Drawer, IconButton } from "@mui/material";
 import Image from "next/image";
 import React, { useState } from "react";
 import Logo from "../../../public/logo.svg";
@@ -30,13 +30,17 @@ const NavBar = () => {
       onKeyDown={toggleDrawer(false)}
     >
       {NavData.map((item, index) => (
-        <Link
-          key={index}
-          href={item.Link}
-          className="block p-2 text-black/90 hover:text-[#4D44B5] font-semibold border-b-2 border-transparent transition transform duration-300 ease-in-out"
-        >
-          {item.title}
-        </Link>
+        <>
+          <Link
+            key={index}
+            href={item.Link}
+            className="block p-2 text-black/90 hover:text-[#4D44B5] font-semibold border-b-2 border-transparent transition transform duration-300 ease-in-out"
+          >
+            {item.title}
+          </Link>
+          <Divider />
+        </>
+
       ))}
     </Box>
   );
