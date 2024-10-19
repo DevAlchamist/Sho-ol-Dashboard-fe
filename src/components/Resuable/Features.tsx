@@ -252,7 +252,7 @@ const Features: React.FC = () => {
 
   return (
     <div className="flex overflow-hidden">
-      <Box className="w-[50%] flex rounded-md flex-col p-8 bg-gray-50">
+      <Box className="w-full flex rounded-md flex-col p-8 bg-gray-50">
         <Box className="text-center text-4xl font-bold mb-12 text-black drop-shadow-md">
           Discover the Magic of Sho-ol
           <Box className="text-center text-lg font-normal mb-12 text-gray-700 drop-shadow-md">
@@ -297,7 +297,7 @@ const Features: React.FC = () => {
           </Box>
         </Box>
       </Box>
-      <div className="w-full -mr-[100px] p-4 flex justify-center">
+      {/* <div className="w-full -mr-[100px] p-4 flex justify-center">
         <Image
           width={2400}
           height={2400}
@@ -305,7 +305,7 @@ const Features: React.FC = () => {
           alt="School Management Dashboard"
           className="w-full h-auto rounded-lg shadow-md"
         />
-      </div>
+      </div> */}
     </div>
   );
 };
