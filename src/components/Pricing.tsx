@@ -380,7 +380,7 @@ const Pricing = () => {
                 </Box>
                 <a
                   href="javascript:void(0)"
-                  className="w-full block  hover:text-[#4D44B5] transform duration-300 text-base font-semibold bg-primary border border-primary rounded-md text-center p-4 hover:bg-opacity-90 transition text-black shadow-md hover:shadow-xl"
+                  className="text-black shadow-md hover:shadow-xl hover:text-[#4D44B5] transition transform duration-300 w-full block text-base font-semibold text-primary bg-transparent border border-[#D4DEFF] rounded-md text-center p-4 hover:bg-primary hover:border-primary  "
                 >
                   Choose Business
                 </a>

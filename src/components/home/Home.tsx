@@ -17,8 +17,7 @@ import Features from "../Resuable/Features";
 
 const HomePage = () => {
   return (
-    <Box className="w-full ">
-      <NavBar />
+    <>
       {/* Broacher */}
       <Box className="w-full h-full flex flex-col gap-10 p-28 items-center justify-center">
         <Box className="text-center">
@@ -87,8 +86,7 @@ const HomePage = () => {
       <Timeline />
       <Features />
       <Pricing />
-      <Footer />
-    </Box>
+    </>
   );
 };
 

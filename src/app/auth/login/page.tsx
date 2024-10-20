@@ -7,8 +7,8 @@ import Link from "next/link";
 const page = () => {
   return (
     <div className="">
-      <div className="w-full h-screen flex justify-between items-center">
-        <div className=" w-[50%] h-[701px] w- flex items-center justify-center rounded-xl">
+      <div className="w-full h-full flex justify-between items-center">
+        <div className=" w-full h-full w- flex items-center justify-center rounded-xl">
           <div className=" w-[505px] flex flex-col gap-10 p-10">
             <div className="text-[25px]">Welcome Back !</div>
             <div>
@@ -60,7 +60,7 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div className="flex w-[50%] h-screen bg-[#4D44B5] items-center justify-center">
+        <div className="xl:flex lg:flex hidden w-full h-screen bg-[#4D44B5] items-center justify-center">
           <Image
             alt="Login"
             className="xl:flex lg:flex hidden w-fit h-fit"

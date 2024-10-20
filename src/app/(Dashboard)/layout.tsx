@@ -1,4 +1,6 @@
 "use client";
+import Footer from "@/components/Footer";
+import NavBar from "@/components/Resuable/NavBar";
 import React from "react";
 
 const Homelayout = ({
@@ -7,8 +9,10 @@ const Homelayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <div className="">
+    <div className="w-full">
+      <NavBar />
       {children}
+      <Footer />
       {/* <HomeFooter /> */}
     </div>
   );
