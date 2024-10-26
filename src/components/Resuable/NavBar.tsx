@@ -1,8 +1,6 @@
-import { Box, Button, Divider, Drawer, IconButton } from "@mui/material";
-import Image from "next/image";
+import { Divider, Drawer, IconButton } from "@mui/material";
 import React, { useState } from "react";
-import Logo from "../../../public/logo.svg";
-import { PentagonOutlined, Menu } from "@mui/icons-material";
+import { Menu } from "@mui/icons-material";
 import Link from "next/link";
 
 const NavBar = () => {
@@ -23,8 +21,7 @@ const NavBar = () => {
   ];
 
   const list = () => (
-    <Box
-      sx={{ width: 250 }}
+    <div
       role="presentation"
       onClick={toggleDrawer(false)}
       onKeyDown={toggleDrawer(false)}
@@ -42,13 +39,13 @@ const NavBar = () => {
         </>
 
       ))}
-    </Box>
+    </div>
   );
 
   return (
-    <Box className="w-full">
-      <Box className="text-black/90 border bg-transparent w-full p-5 flex items-center justify-between text-center gap-5">
-        <Box className="text-black/90 flex items-center justify-center w-full text-center ">
+    <div className="w-full">
+      <div className="text-black/90 border bg-transparent w-full p-5 flex items-center justify-between text-center gap-5">
+        <div className="text-black/90 flex items-center justify-center w-full text-center ">
           <div className="flex truncate items-center font-bold gap-4 text-[20px] w-fit">
             <svg width="48" height="54" viewBox="0 0 48 54" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect y="3" width="48" height="48" rx="16" fill="#4D44B5" />
@@ -58,9 +55,9 @@ const NavBar = () => {
             Sho-ol
           </div>
 
-        </Box>
+        </div>
 
-        <Box className="hidden md:flex w-full items-center justify-center text-center gap-5">
+        <div className="hidden md:flex w-full items-center justify-center text-center gap-5">
           {NavData.map((item, index) => (
             <Link
               key={index}
@@ -70,9 +67,9 @@ const NavBar = () => {
               {item.title}
             </Link>
           ))}
-        </Box>
+        </div>
 
-        <Box className="text-black/90 w-full flex items-center justify-end text-center gap-5">
+        <div className="text-black/90 w-full flex items-center justify-end text-center gap-5">
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -85,13 +82,13 @@ const NavBar = () => {
           <button className="px-4 py-3 border border-[#4D44B5] transition transform duration-300 ease-in-out rounded-lg hover:text-white hover:bg-[#4D44B5]">
             Get Started
           </button>
-        </Box>
-      </Box>
+        </div>
+      </div>
 
       <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
         {list()}
       </Drawer>
-    </Box >
+    </div >
   );
 };
 

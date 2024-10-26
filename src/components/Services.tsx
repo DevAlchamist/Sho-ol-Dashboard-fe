@@ -174,11 +174,11 @@ const Services: React.FC = () => {
   }, []);
 
   return (
-    <Box className="flex flex-col items-center relative justify-center w-full h-full p-20 bg-[#4D44B5]">
-      <Box className="text-[28px] font-semibold text-white border-b-2 mb-10">
+    <div className="flex flex-col items-center relative justify-center w-full h-full p-20 bg-[#4D44B5]">
+      <div className="text-[28px] font-semibold text-white border-b-2 mb-10">
         Services We Offer
-      </Box>
-      <Box className="w-[95%] p-10 overflow-hidden">
+      </div>
+      <div className="w-[95%] p-10 overflow-hidden">
         <motion.div
           ref={carouselRef}
           className="flex gap-10"
@@ -199,18 +199,18 @@ const Services: React.FC = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 1 }}
             >
-              <Box className="text-start">
-                <Box className="pb-2 text-[24px] items-center flex gap-5">
+              <div className="text-start">
+                <div className="pb-2 text-[24px] items-center flex gap-5">
                   <StackedBarChart className="fill-[#4D44B5]" />
                   {item.title}
-                </Box>
-                <Box className="pt-2 text-gray-500">{item.description}</Box>
-              </Box>
+                </div>
+                <div className="pt-2 text-gray-500">{item.description}</div>
+              </div>
             </motion.div>
           ))}
         </motion.div>
-      </Box>
-    </Box>
+      </div>
+    </div>
   );
 };
 

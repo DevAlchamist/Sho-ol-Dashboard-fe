@@ -1,14 +1,13 @@
-import { Box } from "@mui/material";
 import React from "react";
 
 const Pricing = () => {
   return (
-    <Box className=" w-full flex items-center justify-center flex-col">
-      <Box className=" pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] relative z-20 overflow-hidden">
-        <Box className="container">
-          <Box className="flex flex-wrap -mx-4">
-            <Box className="w-full px-4">
-              <Box className="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
+    <div className=" w-full flex items-center justify-center flex-col">
+      <div className=" pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] relative z-20 overflow-hidden">
+        <div className="container">
+          <div className="flex flex-wrap -mx-4">
+            <div className="w-full px-4">
+              <div className="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
                 <h2 className="font-bold text-3xl sm:text-4xl md:text-[40px] text-dark mb-4">
                   Sho-ol Pricing Plans
                 </h2>
@@ -16,12 +15,12 @@ const Pricing = () => {
                   Discover the perfect plan with Sho-ol! Affordable, flexible,
                   and designed just for you.
                 </p>
-              </Box>
-            </Box>
-          </Box>
-          <Box className="flex flex-wrap justify-center -mx-4">
-            <Box className="w-full md:w-1/2 lg:w-1/3 px-4">
-              <Box className="bg-white rounded-xl relative z-10 overflow-hidden border border-[#4D44B5] shadow-md border-opacity-20 shadow-pricing py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-10">
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-wrap justify-center -mx-4">
+            <div className="w-full md:w-1/2 lg:w-1/3 px-4">
+              <div className="bg-white rounded-xl relative z-10 overflow-hidden border border-[#4D44B5] shadow-md border-opacity-20 shadow-pricing py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-10">
                 <span className="text-primary font-semibold text-lg block mb-4">
                   Personal
                 </span>
@@ -34,7 +33,7 @@ const Pricing = () => {
                 <p className=" text-base text-body-color pb-8 mb-8 border-b border-[#F2F2F2] ">
                   Perfect for using in a personal website or a client project.
                 </p>
-                <Box className="mb-7">
+                <div className="mb-7">
                   <p className="text-base text-body-color leading-loose mb-1">
                     1 User
                   </p>
@@ -56,14 +55,14 @@ const Pricing = () => {
                   <p className="text-base text-body-color leading-loose mb-1">
                     3 Months support
                   </p>
-                </Box>
+                </div>
                 <a
                   href="javascript:void(0)"
                   className="text-black shadow-md hover:shadow-xl hover:text-[#4D44B5] transition transform duration-300 w-full block text-base font-semibold text-primary bg-transparent border border-[#D4DEFF] rounded-md text-center p-4 hover:bg-primary hover:border-primary  "
                 >
                   Choose Personal
                 </a>
-                <Box>
+                <div>
                   <span className="absolute right-0 top-7 z-[-1]">
                     <svg
                       width={77}
@@ -331,11 +330,11 @@ const Pricing = () => {
                       />
                     </svg>
                   </span>
-                </Box>
-              </Box>
-            </Box>
-            <Box className="w-full md:w-1/2 lg:w-1/3 px-4">
-              <Box className=" bg-white rounded-xl relative z-10 overflow-hidden border border-[#4D44B5] shadow-md border-opacity-20 shadow-pricing py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-10 ">
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 lg:w-1/3 px-4">
+              <div className=" bg-white rounded-xl relative z-10 overflow-hidden border border-[#4D44B5] shadow-md border-opacity-20 shadow-pricing py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-10 ">
                 <span className="text-primary font-semibold text-lg block mb-4">
                   Business
                 </span>
@@ -355,7 +354,7 @@ const Pricing = () => {
                 >
                   Perfect for using in a Business website or a client project.
                 </p>
-                <Box className="mb-7">
+                <div className="mb-7">
                   <p className="text-base text-body-color leading-loose mb-1">
                     5 Users
                   </p>
@@ -377,14 +376,14 @@ const Pricing = () => {
                   <p className="text-base text-body-color leading-loose mb-1">
                     4 Months support
                   </p>
-                </Box>
+                </div>
                 <a
                   href="javascript:void(0)"
                   className="text-black shadow-md hover:shadow-xl hover:text-[#4D44B5] transition transform duration-300 w-full block text-base font-semibold text-primary bg-transparent border border-[#D4DEFF] rounded-md text-center p-4 hover:bg-primary hover:border-primary  "
                 >
                   Choose Business
                 </a>
-                <Box>
+                <div>
                   <span className="absolute right-0 top-7 z-[-1]">
                     <svg
                       width={77}
@@ -652,11 +651,11 @@ const Pricing = () => {
                       />
                     </svg>
                   </span>
-                </Box>
-              </Box>
-            </Box>
-            <Box className="w-full md:w-1/2 lg:w-1/3 px-4">
-              <Box className=" bg-white rounded-xl relative z-10 overflow-hidden border border-[#4D44B5] shadow-md border-opacity-20 shadow-pricing py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-10 ">
+                </div>
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 lg:w-1/3 px-4">
+              <div className=" bg-white rounded-xl relative z-10 overflow-hidden border border-[#4D44B5] shadow-md border-opacity-20 shadow-pricing py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-10 ">
                 <span className="text-primary font-semibold text-lg block mb-4">
                   Professional
                 </span>
@@ -677,7 +676,7 @@ const Pricing = () => {
                   Perfect for using in a Professional website or a client
                   project.
                 </p>
-                <Box className="mb-7">
+                <div className="mb-7">
                   <p className="text-base text-body-color leading-loose mb-1">
                     Unlimited Users
                   </p>
@@ -699,14 +698,14 @@ const Pricing = () => {
                   <p className="text-base text-body-color leading-loose mb-1">
                     12 Months support
                   </p>
-                </Box>
+                </div>
                 <a
                   href="javascript:void(0)"
                   className=" w-full block  hover:text-[#4D44B5] shadow-md hover:shadow-xl transform duration-300text-base font-semibold text-primary bg-transparent border border-[#D4DEFF] rounded-md text-center p-4 hover:bg-primary hover:border-primary transition text-black "
                 >
                   Choose Professional
                 </a>
-                <Box>
+                <div>
                   <span className="absolute right-0 top-7 z-[-1]">
                     <svg
                       width={77}
@@ -974,13 +973,13 @@ const Pricing = () => {
                       />
                     </svg>
                   </span>
-                </Box>
-              </Box>
-            </Box>
-          </Box>
-        </Box>
-      </Box>
-    </Box>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
