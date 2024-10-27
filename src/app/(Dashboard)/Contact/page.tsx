@@ -1,5 +1,4 @@
 import { GitHub, Instagram, LinkedIn, Twitter, WhatsApp } from '@mui/icons-material'
-import { Box } from '@mui/material'
 import Link from 'next/link'
 import React from 'react'
 
@@ -40,7 +39,7 @@ const page = () => {
           </div>
           <div className="mt-12">
             <h2 className="text-lg font-extrabold">Socials</h2>
-            <Box className="flex items-center justify-start gap-5 mt-3 -mx-2">
+            <div className="flex items-center justify-start gap-5 mt-3 -mx-2">
               <Link
                 href="https://wa.me/8287762253"
                 target="_blank"
@@ -76,7 +75,7 @@ const page = () => {
               >
                 <GitHub className="fill-[#4D44B5]/90" />
               </Link>
-            </Box>
+            </div>
           </div>
         </div>
         <form className="ml-auo space-y-4">

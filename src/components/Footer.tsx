@@ -5,21 +5,20 @@ import {
   Twitter,
   WhatsApp,
 } from "@mui/icons-material";
-import { Box } from "@mui/material";
 import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
   return (
     <footer className="bg-white dark:bg-[#4D44B5]">
-      <Box className="container px-6 py-12 mx-auto">
-        <Box className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
-          <Box className="sm:col-span-2">
+      <div className="container px-6 py-12 mx-auto">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
+          <div className="sm:col-span-2">
             <h1 className="max-w-lg text-xl font-semibold tracking-tight text-gray-800 xl:text-2xl dark:text-white">
-            Join forces with me for exciting and impactful collaborative projects!.
+              Join forces with me for exciting and impactful collaborative projects!.
             </h1>
 
-            <Box className="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
+            <div className="flex flex-col mx-auto mt-6 space-y-3 md:space-y-0 md:flex-row">
               <input
                 id="email"
                 type="text"
@@ -30,15 +29,15 @@ const Footer = () => {
               <button className="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-300 focus:ring-opacity-80">
                 Subscribe
               </button>
-            </Box>
-          </Box>
+            </div>
+          </div>
 
-          <Box>
+          <div>
             <p className="font-semibold text-gray-800 dark:text-white">
               Quick Link
             </p>
 
-            <Box className="flex flex-col items-start mt-5 space-y-2">
+            <div className="flex flex-col items-start mt-5 space-y-2">
               <a
                 href="#"
                 className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
@@ -57,15 +56,15 @@ const Footer = () => {
               >
                 Our Philosophy
               </a>
-            </Box>
-          </Box>
+            </div>
+          </div>
 
-          <Box>
+          <div>
             <p className="font-semibold text-gray-800 dark:text-white">
               Industries
             </p>
 
-            <Box className="flex flex-col items-start mt-5 space-y-2">
+            <div className="flex flex-col items-start mt-5 space-y-2">
               <a
                 href="#"
                 className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
@@ -84,18 +83,18 @@ const Footer = () => {
               >
                 Finance & Insurance
               </a>
-            </Box>
-          </Box>
-        </Box>
+            </div>
+          </div>
+        </div>
 
         <hr className="my-6 border-green-200 md:my-8 dark:border-green-700 border" />
 
-        <Box className="flex items-center justify-between">
+        <div className="flex items-center justify-between">
           <a className="text-white font-bold text-[24px]" href="#">
             Sho-ol
           </a>
 
-          <Box className="flex items-center justify-center gap-5 -mx-2">
+          <div className="flex items-center justify-center gap-5 -mx-2">
             <Link
               href="https://wa.me/8287762253"
               target="_blank"
@@ -131,9 +130,9 @@ const Footer = () => {
             >
               <GitHub className="fill-[#4D44B5]/90" />
             </Link>
-          </Box>
-        </Box>
-      </Box>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 };

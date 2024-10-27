@@ -1,4 +1,4 @@
-import { Box, Tooltip } from "@mui/material";
+import { Tooltip } from "@mui/material";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import img1 from "../../../public/Slider/analytics_555058.png";
@@ -11,7 +11,6 @@ import img4 from "../../../public/Slider/agenda_11399045.png";
 import img3 from "../../../public/Slider/check_1071008.png";
 import img2 from "../../../public/Slider/identification_12099992.png";
 import img8 from "../../../public/Slider/people_1769041.png";
-import img from '../../../public/Dashboard.png';
 
 type Feature = {
   title: string;
@@ -252,51 +251,51 @@ const Features: React.FC = () => {
 
   return (
     <div className="flex overflow-hidden">
-      <Box className="w-full flex rounded-md flex-col p-8 bg-gray-50">
-        <Box className="text-center text-4xl font-bold mb-12 text-black drop-shadow-md">
+      <div className="w-full flex rounded-md flex-col p-8 bg-gray-50">
+        <div className="text-center text-4xl font-bold mb-12 text-black drop-shadow-md">
           Discover the Magic of Sho-ol
-          <Box className="text-center text-lg font-normal mb-12 text-gray-700 drop-shadow-md">
+          <div className="text-center text-lg font-normal mb-12 text-gray-700 drop-shadow-md">
             Unleash the Full Power of Sho-ol Features and Transform Your
             Experience with Our Comprehensive Suite of Tools and Innovations
-          </Box>
-        </Box>
-        <Box className="overflow-hidden  relative">
-          <Box className="flex animate-scroll">
+          </div>
+        </div>
+        <div className="overflow-hidden  relative">
+          <div className="flex animate-scroll">
             {shuffledData.map((item, index) => (
-              <Box key={index} className="min-w-[250px] flex-shrink-0 p-4">
+              <div key={index} className="min-w-[250px] flex-shrink-0 p-4">
                 <Tooltip title={item.description} arrow>
-                  <Box className="flex items-center gap-5 p-4 rounded-lg shadow hover:bg-gray-200">
+                  <div className="flex items-center gap-5 p-4 rounded-lg shadow hover:bg-gray-200">
                     <Image
                       src={item.icon}
                       alt={item.title}
                       width={50}
                       height={50}
                     />
-                    <Box className="mt-2 text-center font-bold">{item.title}</Box>
-                  </Box>
+                    <div className="mt-2 text-center font-bold">{item.title}</div>
+                  </div>
                 </Tooltip>
-              </Box>
+              </div>
             ))}
-          </Box>
-          <Box className="flex animate-ReverseScroll">
+          </div>
+          <div className="flex animate-ReverseScroll">
             {shuffledData2.map((item, index) => (
-              <Box key={index} className="min-w-[250px] flex-shrink-0 p-4">
+              <div key={index} className="min-w-[250px] flex-shrink-0 p-4">
                 <Tooltip title={item.description} arrow>
-                  <Box className="flex justify-center gap-5  items-center p-4 rounded-lg shadow hover:bg-gray-200">
+                  <div className="flex justify-center gap-5  items-center p-4 rounded-lg shadow hover:bg-gray-200">
                     <Image
                       src={item.icon}
                       alt={item.title}
                       width={50}
                       height={50}
                     />
-                    <Box className="mt-2 text-center font-bold">{item.title}</Box>
-                  </Box>
+                    <div className="mt-2 text-center font-bold">{item.title}</div>
+                  </div>
                 </Tooltip>
-              </Box>
+              </div>
             ))}
-          </Box>
-        </Box>
-      </Box>
+          </div>
+        </div>
+      </div>
       {/* <div className="w-full -mr-[100px] p-4 flex justify-center">
         <Image
           width={2400}

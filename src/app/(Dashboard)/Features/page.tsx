@@ -1,11 +1,11 @@
-import React from "react";
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import img from "../../../../public/Dashboard.png";
-import Image from "next/image";
+import React from 'react';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import img from '../../../../public/Dashboard.png';
+import Image from 'next/image';
 
 const majorFeatures = [
   {
@@ -48,32 +48,93 @@ const Page = () => {
           and finance
         </h2>
       </div>
-      <div className=" overflow-hidden w-full flex items-center justify-between">
-        <div className="  p-4">
+      <div className=" w-full flex md:flex-row items-center">
+        <div className="w-full  p-4">
           <div className=" grid border divide-x divide-y rounded-xl overflow-hidden sm:grid-cols-1 lg:divide-y-0 lg:grid-cols-2 xl:grid-cols-2">
-            {majorFeatures.map((features,index) => (
-              <div key={index} className="relative group bg-white transition hover:z-[1] hover:shadow-2xl">
-                <div className="relative p-8 space-y-8">
-                  <div className="space-y-2">
-                    <h5 className="text-xl text-gray-800 font-medium transition group-hover:text-[#4d44b5]">
-                      {features.title}
-                    </h5>
-                    <p className="text-sm text-gray-600">
-                      {features.description}
-                    </p>
-                  </div>
-                  <a
-                    href="#"
-                    className="flex justify-between items-center group-hover:text-[#4d44b5]"
-                  >
-                    <span className="text-sm">Read more</span>
-                    <span className="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                      →
-                    </span>
-                  </a>
+            <div className="relative group bg-white transition hover:z-[1] hover:shadow-2xl">
+              <div className="relative p-6 space-y-6">
+                <Image
+                  src="https://tailus.io/sources/blocks/stacked/preview/images/avatars/burger.png"
+                  className="w-10"
+                  width={512}
+                  height={512}
+                  alt="burger illustration"
+                />
+                <div className="space-y-2">
+                  <h5 className="text-xl text-gray-800 font-medium transition group-hover:text-yellow-600">
+                    First feature
+                  </h5>
+                  <p className="text-sm text-gray-600">
+                    Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                  </p>
                 </div>
+                <a
+                  href="#"
+                  className="flex justify-between items-center group-hover:text-yellow-600"
+                >
+                  <span className="text-sm">Read more</span>
+                  <span className="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">
+                    →
+                  </span>
+                </a>
               </div>
-            ))}
+            </div>
+            <div className="relative group bg-white transition hover:z-[1] hover:shadow-2xl">
+              <div className="relative p-6 space-y-6">
+                <Image
+                  src="https://tailus.io/sources/blocks/stacked/preview/images/avatars/trowel.png"
+                  className="w-10"
+                  width={512}
+                  height={512}
+                  alt="burger illustration"
+                />
+                <div className="space-y-2">
+                  <h5 className="text-xl text-gray-800 font-medium transition group-hover:text-yellow-600">
+                    Second feature
+                  </h5>
+                  <p className="text-sm text-gray-600">
+                    Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  className="flex justify-between items-center group-hover:text-yellow-600"
+                >
+                  <span className="text-sm">Read more</span>
+                  <span className="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">
+                    →
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div className="relative group bg-white transition hover:z-[1] hover:shadow-2xl">
+              <div className="relative p-6 space-y-6">
+                <Image
+                  src="https://tailus.io/sources/blocks/stacked/preview/images/avatars/package-delivery.png"
+                  className="w-10"
+                  width={512}
+                  height={512}
+                  alt="burger illustration"
+                />
+                <div className="space-y-2">
+                  <h5 className="text-xl text-gray-800 font-medium transition group-hover:text-yellow-600">
+                    Third feature
+                  </h5>
+                  <p className="text-sm text-gray-600">
+                    Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  className="flex justify-between items-center group-hover:text-yellow-600"
+                >
+                  <span className="text-sm">Read more</span>
+                  <span className="-translate-x-4 opacity-0 text-2xl transition duration-300 group-hover:opacity-100 group-hover:translate-x-0">
+                    →
+                  </span>
+                </a>
+              </div>
+            </div>
             <div className="relative group bg-gray-100 transition hover:z-[1] hover:shadow-2xl lg:hidden xl:block">
               <div className="relative p-6 space-y-6 border-dashed rounded-lg transition duration-300 group-hover:bg-white group-hover:border group-hover:scale-90">
                 <div className="space-y-2">
@@ -100,13 +161,13 @@ const Page = () => {
         </div>
 
         {/* Right side: Image */}
-        <div className="w-full relative items-center  p-4 flex justify-center">
+        <div className="w-full  overflow-hidden -mr-[100px] p-4 flex justify-center">
           <Image
             width={2400}
             height={2400}
             src={img} // Replace with the actual image path
             alt="School Management Dashboard"
-            className="w-full absolute   rounded-lg shadow-md"
+            className="w-full h-auto rounded-lg shadow-md"
           />
         </div>
       </div>

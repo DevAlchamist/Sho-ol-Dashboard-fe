@@ -1,4 +1,3 @@
-import { Box } from "@mui/material";
 import Image from "next/image";
 import img1 from "../../public/11121444_4676207.svg";
 import img2 from "../../public/11785876_4815540.svg";
@@ -40,33 +39,33 @@ const timelineData = [
 
 const TimelineComp = () => {
   return (
-    <Box className="text-center w-full h-full flex-col flex items-center justify-center p-20">
-      <Box className="font-bold text-[28px] border-b-2 border-[#4D44B5] mb-10">
+    <div className="text-center w-full h-full flex-col flex items-center justify-center p-20">
+      <div className="font-bold text-[28px] border-b-2 border-[#4D44B5] mb-10">
         Start With Sho-ol
-      </Box>
-      {/* <Box className="w-[90%] flex flex-col">
+      </div>
+      {/* <div className="w-[90%] flex flex-col">
         {timelineData.map((item, index) => (
-          <Box
+          <div
             className={`justify-between w-full flex items-center ${
               index % 2 === 0 ? " text-start" : "flex-row-reverse text-end"
             }`}
             key={index}
           >
-            <Box className={`w-[600px] p-5  mb-10 text-start`}>
-              <Box className="font-semibold text-xl mb-2">{item.title}</Box>
-              <Box className="text-lg">{item.description}</Box>
-            </Box>
-            <Box>
+            <div className={`w-[600px] p-5  mb-10 text-start`}>
+              <div className="font-semibold text-xl mb-2">{item.title}</div>
+              <div className="text-lg">{item.description}</div>
+            </div>
+            <div>
               <Image
                 className="h-[400px] w-[400px]"
                 src={item.image}
                 alt="img1"
               />
-            </Box>
-          </Box>
+            </div>
+          </div>
         ))}
-      </Box> */}
-      <>
+      </div> */}
+      <div>
         {/* //component */}
         <div className="container mx-auto bg-white p-4 lg:p-12">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
@@ -79,7 +78,7 @@ const TimelineComp = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   className="ml-2 h-4 w-4"
                   fill="none"
-                  viewBox="0 0 24 24"
+                  viewdiv="0 0 24 24"
                   stroke="currentColor"
                   strokeWidth={2}
                 >
@@ -109,7 +108,7 @@ const TimelineComp = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   className="ml-2 h-4 w-4"
                   fill="none"
-                  viewBox="0 0 24 24"
+                  viewdiv="0 0 24 24"
                   stroke="currentColor"
                   strokeWidth={2}
                 >
@@ -139,7 +138,7 @@ const TimelineComp = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   className="ml-2 h-4 w-4"
                   fill="none"
-                  viewBox="0 0 24 24"
+                  viewdiv="0 0 24 24"
                   stroke="currentColor"
                   strokeWidth={2}
                 >
@@ -169,7 +168,7 @@ const TimelineComp = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   className="ml-2 h-4 w-4"
                   fill="none"
-                  viewBox="0 0 24 24"
+                  viewdiv="0 0 24 24"
                   stroke="currentColor"
                   strokeWidth={2}
                 >
@@ -192,8 +191,8 @@ const TimelineComp = () => {
             </div>
           </div>
         </div>
-      </>
-    </Box>
+      </div>
+    </div>
   );
 };
 
