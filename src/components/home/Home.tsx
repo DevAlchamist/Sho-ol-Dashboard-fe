@@ -1,4 +1,3 @@
-import NavBar from "@/components/Resuable/NavBar";
 import Services from "@/components/Services";
 import {
   GitHub,

@@ -3,6 +3,7 @@ import Image from "next/image";
 import img1 from "../../../../public/Saly-10.svg";
 import React from "react";
 import Link from "next/link";
+import { Google } from "@mui/icons-material";
 
 const page = () => {
   return (
@@ -14,8 +15,7 @@ const page = () => {
             <div>
               <div className="text-[31px] font-medium">Sign in</div>
               <div className="text-[16px]">
-                Access Your Personalized School DashBoard and Stay
-                Connected
+                Access Your Personalized School DashBoard and Stay Connected
               </div>
             </div>
             <div className="flex flex-col gap-5">
@@ -53,10 +53,13 @@ const page = () => {
               {" "}
               Don’t have an Account ?{" "}
               <strong className="text-black">
-                <Link href="/auth/signup">
-                Create One
-                </Link>
-                </strong>
+                <Link href="/auth/signup">Create One</Link>
+              </strong>
+            </div>
+            <div className="text-[16px] text-center text-[#4D4D4D]">
+              <button>
+                <Google />
+              </button>
             </div>
           </div>
         </div>

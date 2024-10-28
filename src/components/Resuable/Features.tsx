@@ -1,4 +1,3 @@
-import { Tooltip } from "@mui/material";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import img1 from "../../../public/Slider/analytics_555058.png";
@@ -19,7 +18,6 @@ type Feature = {
 };
 
 const Features: React.FC = () => {
-
   const [shuffledData, setShuffledData] = useState<Feature[]>([]);
   const [shuffledData2, setShuffledData2] = useState<Feature[]>([]);
 
@@ -47,7 +45,8 @@ const Features: React.FC = () => {
       },
       {
         title: "Analytics",
-        description: "Monitor overall performance with comprehensive analytics.",
+        description:
+          "Monitor overall performance with comprehensive analytics.",
         icon: img7,
       },
       {
@@ -263,34 +262,30 @@ const Features: React.FC = () => {
           <div className="flex animate-scroll">
             {shuffledData.map((item, index) => (
               <div key={index} className="min-w-[250px] flex-shrink-0 p-4">
-                <Tooltip title={item.description} arrow>
-                  <div className="flex items-center gap-5 p-4 rounded-lg shadow hover:bg-gray-200">
-                    <Image
-                      src={item.icon}
-                      alt={item.title}
-                      width={50}
-                      height={50}
-                    />
-                    <div className="mt-2 text-center font-bold">{item.title}</div>
-                  </div>
-                </Tooltip>
+                <div className="flex items-center gap-5 p-4 rounded-lg shadow hover:bg-gray-200">
+                  <Image
+                    src={item.icon}
+                    alt={item.title}
+                    width={50}
+                    height={50}
+                  />
+                  <div className="mt-2 text-center font-bold">{item.title}</div>
+                </div>
               </div>
             ))}
           </div>
           <div className="flex animate-ReverseScroll">
             {shuffledData2.map((item, index) => (
               <div key={index} className="min-w-[250px] flex-shrink-0 p-4">
-                <Tooltip title={item.description} arrow>
-                  <div className="flex justify-center gap-5  items-center p-4 rounded-lg shadow hover:bg-gray-200">
-                    <Image
-                      src={item.icon}
-                      alt={item.title}
-                      width={50}
-                      height={50}
-                    />
-                    <div className="mt-2 text-center font-bold">{item.title}</div>
-                  </div>
-                </Tooltip>
+                <div className="flex justify-center gap-5  items-center p-4 rounded-lg shadow hover:bg-gray-200">
+                  <Image
+                    src={item.icon}
+                    alt={item.title}
+                    width={50}
+                    height={50}
+                  />
+                  <div className="mt-2 text-center font-bold">{item.title}</div>
+                </div>
               </div>
             ))}
           </div>
