@@ -1,3 +1,5 @@
+Sure! Below is the corrected README file for your **Sho-ol** project, ensuring proper formatting and structure:
+
 ---
 
 # Sho-ol
@@ -87,3 +89,5 @@ We welcome contributions to improve Sho-ol! To contribute:
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
+
+Feel free to adjust any sections as necessary or add additional information specific to your project! If you need further modifications or additional content, just let me know!
