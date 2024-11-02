@@ -28,20 +28,20 @@ Sho-ol provides a variety of customizable features, including:
 
 To set up the Sho-ol platform on your local environment, follow these steps:
 
-1. Clone the repository:
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/your-username/shool.git
    cd shool
    ```
 
-2. Install dependencies:
+2. **Install dependencies**:
    ```bash
    npm install
    ```
 
-3. Set up environment variables: Create a `.env` file in the root directory and configure it with your database credentials, API keys, and other necessary settings.
+3. **Set up environment variables**: Create a `.env` file in the root directory and configure it with your database credentials, API keys, and other necessary settings.
 
-4. Run the development server:
+4. **Run the development server**:
    ```bash
    npm run dev
    ```
@@ -70,17 +70,17 @@ Sho-ol can be configured to suit various types of institutions by enabling/disab
 
 We welcome contributions to improve Sho-ol! To contribute:
 
-1. Fork the repository.
-2. Create a new branch with your feature or fix:
+1. **Fork the repository**.
+2. **Create a new branch** with your feature or fix:
    ```bash
    git checkout -b feature/your-feature-name
    ```
-3. Commit your changes and push to your fork:
+3. **Commit your changes and push to your fork**:
    ```bash
    git commit -m "Add new feature"
    git push origin feature/your-feature-name
    ```
-4. Submit a pull request for review.
+4. **Submit a pull request** for review.
 
 ## License
 
