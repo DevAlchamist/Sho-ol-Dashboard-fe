@@ -8,6 +8,8 @@ const page = () => {
         <div className="text-3xl text-[#4D44B5] font-bold">Dashboard</div>
         <SearchBar />
       </div>
+      <div>User</div>
+      <div>Role</div>
     </div>
   );
 };

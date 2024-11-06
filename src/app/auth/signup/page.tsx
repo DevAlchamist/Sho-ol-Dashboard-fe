@@ -1,16 +1,39 @@
-"use client ";
+"use client";
 import Image from "next/image";
 import img1 from "../../../../public/Saly-10.svg";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 
-const page = () => {
+const Page = () => {
+  // Local state for email and password
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = async (event: any) => {
+    event.preventDefault(); // Prevent default form submission
+    console.log("Username:", username);
+    console.log("Password:", password);
+
+    // Uncomment and implement the actual signIn logic if required
+    // const result = await signIn("credentials", {
+    //   redirect: false, // Prevent automatic redirect
+    //   identifier: username,
+    //   password: password,
+    // });
+    // if (result.error) {
+    //   console.error("Login failed:", result.error);
+    // } else {
+    //   console.log("Login successful!");
+    //   // Optionally, handle successful login (e.g., redirect to dashboard)
+    // }
+  };
+
   return (
     <div className="">
       <div className="w-full h-screen flex justify-between items-center">
-        <div className=" w-full h-full w- flex items-center justify-center rounded-xl">
-          <div className=" w-[505px] flex flex-col gap-10 p-10">
-            <div className="text-[25px]">Welcome !</div>
+        <div className="w-full h-full flex items-center justify-center rounded-xl">
+          <div className="w-[505px] flex flex-col gap-10 p-10">
+            <div className="text-[25px]">Welcome!</div>
             <div>
               <div className="text-[31px] font-medium">Sign Up</div>
               <div className="text-[16px]">
@@ -20,20 +43,24 @@ const page = () => {
             </div>
             <div className="flex flex-col gap-5">
               <div className="flex flex-col gap-[38px]">
-                <div className="w-full ">
+                <div className="w-full">
                   <input
                     type="email"
-                    className="w-full outline-none text-[14px]  pl-6 py-5 border-black border-b "
+                    className="w-full outline-none text-[14px] pl-6 py-5 border-black border-b"
                     id="email"
                     placeholder="Enter Your E-Mail"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
                   />
                 </div>
-                <div className="w-full ">
+                <div className="w-full">
                   <input
-                    className="w-full outline-none text-[14px]  pl-6 py-5 border-black border-b "
                     type="password"
+                    className="w-full outline-none text-[14px] pl-6 py-5 border-black border-b"
                     id="password"
                     placeholder="Enter Your Password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
               </div>
@@ -45,13 +72,15 @@ const page = () => {
                 </div>
                 <div>Forgot Password?</div>
               </div>
-              <div className="bg-[#4D44B5] rounded-md text-white text-center py-4 text-[16px]">
+              <button
+                className="bg-[#4D44B5] rounded-md text-white text-center py-4 text-[16px]"
+                onClick={handleSubmit}
+              >
                 Login
-              </div>
+              </button>
             </div>
             <div className="text-[16px] text-center text-[#4D4D4D]">
-              {" "}
-              Already have an Account ?{" "}
+              Already have an Account?{" "}
               <strong className="text-black">
                 <Link href="/auth/login">Login</Link>
               </strong>
@@ -72,4 +101,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

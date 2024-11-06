@@ -34,7 +34,7 @@ const HomePage = () => {
             Effortlessly
           </div>
         </div>
-        <a className="fancy" href="">
+        <a className="fancy" href="/auth/login">
           <span className="top-key"></span>
           <span className="text">Create Your First Dashboard</span>
           <span className="bottom-key-1"></span>
