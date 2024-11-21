@@ -4,31 +4,33 @@ import img1 from "../../../../public/Saly-10.svg";
 import React, { useState } from "react";
 import Link from "next/link";
 import { GitHub, Google } from "@mui/icons-material";
+import useAppStore from "@/store/useAppStore";
+import { useRouter } from "next/navigation";
 
 const Page = () => {
+  const { login, user, error } = useAppStore();
+  const router = useRouter();
   // Local state for email and password
-  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = async (event: any) => {
     event.preventDefault(); // Prevent default form submission
-    console.log(username);
+    console.log(email);
     console.log(password);
-    // const result: any = await signIn("credentials", {
-    //   redirect: false, // Prevent automatic redirect
-    //   identifier: username,
-    //   password: username,
-    // });
-    // console.log(result);
-    // if (result.error) {
-    //   console.error("Login failed:", result.error);
-    //   // Optionally, you can show an error message to the user
-    // } else {
-    //   // Optionally, handle successful login (e.g., redirect to dashboard)
-    //   console.log("Login successful!");
-    // }
-  };
+    // Uncomment and implement the actual signIn logic if required
+    await login(email, password);
+    if (error) {
+      console.error("Login failed:", error);
+    } else {
+      if (user) {
+        console.log("Login successful!");
+        router.push("/user");
+      }
 
+      // Optionally, handle successful login (e.g., redirect to dashboard)
+    }
+  };
   return (
     <div className="">
       <div className="w-full h-full flex justify-between items-center">
@@ -45,12 +47,12 @@ const Page = () => {
               <div className="flex flex-col gap-[38px]">
                 <div className="w-full">
                   <input
-                    type="username"
+                    type="email"
                     className="w-full outline-none text-[14px] pl-6 py-5 border-black border-b"
-                    id="username"
+                    id="email"
                     placeholder="Enter Your E-Mail"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)} // Update email state
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)} // Update email state
                   />
                 </div>
                 <div className="w-full">
@@ -84,14 +86,6 @@ const Page = () => {
               <strong className="text-black">
                 <Link href="/auth/signup">Create One</Link>
               </strong>
-            </div>
-            <div className="flex items-center justify-center gap-3 text-[#4D4D4D]">
-              <button>
-                <Google />
-              </button>
-              <button>
-                <GitHub />
-              </button>
             </div>
           </div>
         </div>

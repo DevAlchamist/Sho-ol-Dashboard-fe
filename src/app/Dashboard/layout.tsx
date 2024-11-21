@@ -12,7 +12,7 @@ const Dashboardlayout = ({
       <div className="flex h-screen overflow-hidden">
         <SidebarComponent />
       </div>
-      <main className="flex-1 bg-[#f3f4ff] h-screen overflow-y-auto p-4">
+      <main className="flex-1 bg-[#f3f4ff] h-screen overflow-y-auto ">
         {children}
       </main>
       <div></div>

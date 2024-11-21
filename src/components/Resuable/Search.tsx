@@ -25,7 +25,7 @@ export default function SearchBar() {
         placeholder="Search Here..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        className="pl-8 rounded-full" // Adds padding to avoid icon overlap
+        className="pl-8 border-none rounded-full" // Adds padding to avoid icon overlap
       />
     </form>
   );

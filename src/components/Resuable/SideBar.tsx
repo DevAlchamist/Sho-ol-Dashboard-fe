@@ -21,19 +21,19 @@ const menuItems = [
   { name: "Home", icon: Home, href: "/Dashboard" },
   { name: "Students", icon: Users, href: "/Dashboard/Students" },
   { name: "Teachers", icon: User2, href: "/Dashboard/Teachers" },
-  { name: "Event", icon: CalendarMinusIcon, href: "/Dashboard/users" },
-  { name: "Finance", icon: PiggyBankIcon, href: "/Dashboard/users" },
-  { name: "Food", icon: ForkKnife, href: "/Dashboard/users" },
-  { name: "Chat", icon: ChartBarIcon, href: "/Dashboard/users" },
-  { name: "Latest Activity", icon: GitGraphIcon, href: "/Dashboard/users" },
-  { name: "Settings", icon: Settings, href: "/Dashboard/settings" },
+  { name: "Event", icon: CalendarMinusIcon, href: "/Dashboard/Event" },
+  { name: "Finance", icon: PiggyBankIcon, href: "/Dashboard/Finance" },
+  { name: "Food", icon: ForkKnife, href: "/Dashboard/Food" },
+  { name: "Chat", icon: ChartBarIcon, href: "/Dashboard/Chat" },
+  { name: "Latest Activity", icon: GitGraphIcon, href: "/Dashboard/Activity" },
+  { name: "Settings", icon: Settings, href: "/Dashboard/Settings" },
 ];
 
 export default function SidebarComponent() {
   const pathname = usePathname();
 
   return (
-    <div className="flex flex-col w-[299px] h-screen  bg-[#4D44B5] text-white">
+    <div className="flex flex-col w-[300px] h-screen pl-4 py-4 bg-[#4D44B5] text-white">
       {/* Sidebar Header */}
       <div className="flex items-center p-4 h-[64px] bg-[#4D44B5]">
         <Image

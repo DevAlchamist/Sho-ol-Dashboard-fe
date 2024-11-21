@@ -3,29 +3,40 @@ import Image from "next/image";
 import img1 from "../../../../public/Saly-10.svg";
 import React, { useState } from "react";
 import Link from "next/link";
+import useAppStore from "@/store/useAppStore";
+import { useRouter } from "next/navigation";
 
 const Page = () => {
+  const { register, user } = useAppStore();
+  const router = useRouter();
   // Local state for email and password
   const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = async (event: any) => {
     event.preventDefault(); // Prevent default form submission
     console.log("Username:", username);
+    console.log("Email:", email);
     console.log("Password:", password);
 
     // Uncomment and implement the actual signIn logic if required
-    // const result = await signIn("credentials", {
-    //   redirect: false, // Prevent automatic redirect
-    //   identifier: username,
-    //   password: password,
-    // });
-    // if (result.error) {
-    //   console.error("Login failed:", result.error);
-    // } else {
-    //   console.log("Login successful!");
-    //   // Optionally, handle successful login (e.g., redirect to dashboard)
-    // }
+    const result: any = await register(
+      username,
+      email, // Prevent automatic redirect
+      password
+    );
+    if (result.error) {
+      console.error("Login failed:", result.error);
+    } else {
+      if (user) {
+        console.log(result);
+        console.log("Login successful!");
+        router.push("/user");
+      }
+
+      // Optionally, handle successful login (e.g., redirect to dashboard)
+    }
   };
 
   return (
@@ -45,12 +56,22 @@ const Page = () => {
               <div className="flex flex-col gap-[38px]">
                 <div className="w-full">
                   <input
+                    type="name"
+                    className="w-full outline-none text-[14px] pl-6 py-5 border-black border-b"
+                    id="username"
+                    placeholder="Enter Your Username"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                  />
+                </div>
+                <div className="w-full">
+                  <input
                     type="email"
                     className="w-full outline-none text-[14px] pl-6 py-5 border-black border-b"
                     id="email"
                     placeholder="Enter Your E-Mail"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
                 <div className="w-full">
