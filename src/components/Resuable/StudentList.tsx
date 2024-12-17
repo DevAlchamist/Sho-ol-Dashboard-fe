@@ -20,6 +20,8 @@ import {
 } from "@/components/ui/table";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"; // Adjust these imports based on your ShadCN setup
 import { Student } from "@/hooks/interfaces";
+import Image from "next/image";
+import Link from "next/link";
 
 // Sample Data
 const studentsData: Student[] = [
@@ -97,13 +99,20 @@ const StudentTable = () => {
                     <RadioGroupItem value={student.id} />
                   </RadioGroup>
                 </TableCell>
-                <TableCell className="flex font-bold gap-2 items-center ">
-                  <img
-                    src={student.profile}
-                    alt={student.name}
-                    className="w-10 h-10 rounded-full"
-                  />
-                  {student.name}
+                <TableCell className="font-bold ">
+                  <Link
+                    className="flex  items-center gap-2"
+                    href={`/Dashboard/Students/${student.id}`}
+                  >
+                    <Image
+                      height={100}
+                      width={100}
+                      src={student.profile}
+                      alt={student.name}
+                      className="w-10 h-10 rounded-full"
+                    />
+                    {student.name}
+                  </Link>
                 </TableCell>
                 <TableCell className="text-[#4D44B5]">{student.id}</TableCell>
                 <TableCell className="text-[#A098AE]">{student.date}</TableCell>

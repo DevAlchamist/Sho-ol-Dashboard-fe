@@ -18,7 +18,6 @@ const Page = () => {
     event.preventDefault(); // Prevent default form submission
     console.log(email);
     console.log(password);
-    // Uncomment and implement the actual signIn logic if required
     await login(email, password);
     if (error) {
       console.error("Login failed:", error);
@@ -27,8 +26,6 @@ const Page = () => {
         console.log("Login successful!");
         router.push("/user");
       }
-
-      // Optionally, handle successful login (e.g., redirect to dashboard)
     }
   };
   return (

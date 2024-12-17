@@ -1,4 +1,5 @@
 import { Calendar, Clock } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
 const ScheduleTable = () => {
@@ -29,10 +30,12 @@ const ScheduleTable = () => {
               </div>
             </div>
             <div className="">
-              <img
+              <Image
+                height={100}
+                width={100}
                 src="https://via.placeholder.com/150"
                 alt="img"
-                className="rounded-full h-14"
+                className="rounded-full h-14 w-14"
               />
             </div>
           </div>
@@ -57,10 +60,12 @@ const ScheduleTable = () => {
               </div>
             </div>
             <div className="">
-              <img
+              <Image
+                height={100}
+                width={100}
                 src="https://via.placeholder.com/150"
                 alt="img"
-                className="rounded-full h-14"
+                className="rounded-full h-14 w-14"
               />
             </div>
           </div>
@@ -85,10 +90,12 @@ const ScheduleTable = () => {
               </div>
             </div>
             <div className="">
-              <img
+              <Image
+                height={100}
+                width={100}
                 src="https://via.placeholder.com/150"
                 alt="img"
-                className="rounded-full h-14"
+                className="rounded-full h-14 w-14"
               />
             </div>
           </div>
@@ -113,10 +120,12 @@ const ScheduleTable = () => {
               </div>
             </div>
             <div className="">
-              <img
+              <Image
+                height={100}
+                width={100}
                 src="https://via.placeholder.com/150"
                 alt="img"
-                className="rounded-full h-14"
+                className="rounded-full h-14 w-14"
               />
             </div>
           </div>

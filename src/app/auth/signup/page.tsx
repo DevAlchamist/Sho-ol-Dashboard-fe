@@ -86,11 +86,7 @@ const Page = () => {
                 </div>
               </div>
 
-              <div className="w-full text-[12px] text-[#4D4D4D] flex justify-between items-center">
-                <div className="flex gap-3">
-                  <input type="checkbox" />
-                  <div>Remember Me</div>
-                </div>
+              <div className="w-full text-[12px] text-[#4D4D4D] flex justify-end items-center">
                 <div>Forgot Password?</div>
               </div>
               <button
@@ -101,7 +97,7 @@ const Page = () => {
               </button>
             </div>
             <div className="text-[16px] text-center text-[#4D4D4D]">
-              Already have an Account?{" "}
+              Already have an Account?
               <strong className="text-black">
                 <Link href="/auth/login">Login</Link>
               </strong>

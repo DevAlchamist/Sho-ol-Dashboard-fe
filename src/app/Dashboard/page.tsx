@@ -10,7 +10,7 @@ import { jellyTriangle } from "ldrs";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
-const page = () => {
+const Page = () => {
   jellyTriangle.register();
   const router = useRouter();
   const { user, fetchCurrentUser, loading } = useAppStore();
@@ -76,8 +76,12 @@ const page = () => {
                     </svg>
                   </div>
                   <div>
-                    <div className="text-[#A098AE]">Students</div>
-                    <div className="font-bold text-[#303972] text-3xl">932</div>
+                    <a href="/Dashboard/Students">
+                      <div className="text-[#A098AE]">Students</div>
+                      <div className="font-bold text-[#303972] text-3xl">
+                        932
+                      </div>
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-center gap-5">
@@ -105,8 +109,12 @@ const page = () => {
                     </svg>
                   </div>
                   <div>
-                    <div className="text-[#A098AE]">Teachers</div>
-                    <div className="font-bold text-[#303972] text-3xl">932</div>
+                    <a href="/Dashboard/Teachers">
+                      <div className="text-[#A098AE]">Teachers</div>
+                      <div className="font-bold text-[#303972] text-3xl">
+                        932
+                      </div>
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-center gap-5">
@@ -125,8 +133,12 @@ const page = () => {
                     </svg>
                   </div>
                   <div>
-                    <div className="text-[#A098AE]">Events</div>
-                    <div className="font-bold text-[#303972] text-3xl">932</div>
+                    <a href="/Dashboard/Event">
+                      <div className="text-[#A098AE]">Events</div>
+                      <div className="font-bold text-[#303972] text-3xl">
+                        932
+                      </div>
+                    </a>
                   </div>
                 </div>
                 <div className="flex items-center gap-5">
@@ -145,8 +157,12 @@ const page = () => {
                     </svg>
                   </div>
                   <div>
-                    <div className="text-[#A098AE]">Foods</div>
-                    <div className="font-bold text-[#303972] text-3xl">932</div>
+                    <a href="/Dashboard/Foods">
+                      <div className="text-[#A098AE]">Foods</div>
+                      <div className="font-bold text-[#303972] text-3xl">
+                        932
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -205,4 +221,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -16,9 +16,10 @@ import {
   Plus,
   Settings,
 } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
-const page = () => {
+const Page = () => {
   const teachersData = [
     {
       id: "1",
@@ -137,9 +138,14 @@ const page = () => {
         </div>
       </div>
       <div className="flex flex-wrap w-full gap-8">
-        {teachersData.map((item) => (
-          <div className="bg-white relative h-[230px] rounded-xl w-[210px] p-4 flex flex-col gap-3 items-center justify-center">
-            <img
+        {teachersData.map((item, index) => (
+          <div
+            key={index}
+            className="bg-white relative h-[230px] rounded-xl w-[210px] p-4 flex flex-col gap-3 items-center justify-center"
+          >
+            <Image
+              height={100}
+              width={100}
               src={item.profile}
               alt="img"
               className="rounded-full h-[72px] w-[72px]"
@@ -175,4 +181,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

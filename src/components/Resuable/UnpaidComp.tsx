@@ -18,6 +18,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"; // Adjust these imports to your ShadCN component library
+import Image from "next/image";
 
 const unpaidStudents = [
   {
@@ -25,35 +26,35 @@ const unpaidStudents = [
     name: "John Doe",
     profile: "https://via.placeholder.com/150",
     pendingFees: "$500",
-    class:"12th A"
+    class: "12th A",
   },
   {
     id: 1123131,
     name: "Jane Smith",
     profile: "https://via.placeholder.com/151",
     pendingFees: "$300",
-    class:"12th A"
+    class: "12th A",
   },
   {
     id: 3431545,
     name: "Alice Brown",
     profile: "https://via.placeholder.com/152",
     pendingFees: "$450",
-    class:"12th A"
+    class: "12th A",
   },
   {
     id: 134545,
     name: "Pixie(My wife)",
     profile: "https://via.placeholder.com/153",
     pendingFees: "KissX1000",
-    class:"12th A"
+    class: "12th A",
   },
   {
     id: 461545,
     name: "Shubhanshu Rana",
     profile: "https://via.placeholder.com/154",
     pendingFees: "Love",
-    class:"12th A"
+    class: "12th A",
   },
   // Add more students as needed
 ];
@@ -70,7 +71,9 @@ const UnpaidStudentsTable = () => {
             {unpaidStudents.map((student) => (
               <TableRow key={student.id}>
                 <TableCell>
-                  <img
+                  <Image
+                    height={100}
+                    width={100}
                     src={student.profile}
                     alt={student.name}
                     className="w-10 h-10 rounded-full"
