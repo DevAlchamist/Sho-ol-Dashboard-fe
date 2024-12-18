@@ -63,7 +63,7 @@ const Calendar = () => {
     <Card className="shadow-none border-none w-full">
       <CardContent>
         <div className="flex justify-between items-center px-2 py-4">
-          <div className="font-bold text-[#4D44B5] text-xl">School Calender</div>
+          <div className="font-bold text-PURPLE text-xl">School Calender</div>
           <select
             value={currentDate.month()}
             onChange={handleMonthChange}

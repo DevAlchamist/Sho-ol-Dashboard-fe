@@ -81,7 +81,7 @@ const FoodTable = () => {
   return (
     <div className="space-y-4 bg-white p-4 rounded-xl">
       <div className="flex items-center justify-between space-x-2">
-        <div className="text-xl text-[#4D44B5] font-bold">Food Menu</div>
+        <div className="text-xl text-PURPLE font-bold">Food Menu</div>
         <div className="flex justify-end space-x-2">
           <Button
             onClick={() => setFilter("All")}
@@ -116,8 +116,8 @@ const FoodTable = () => {
               <TableCell>
                 <div className="bg-[#C1BBEB] w-[100px] rounded-xl  h-[100px]"></div>
               </TableCell>
-              <TableCell className="w-full flex flex-col text-[#4D44B5] font-bold text-xl">
-                <div className="text-[10px] w-fit text-white font-light px-5 rounded-full py-[1px] bg-[#4D44B5]">
+              <TableCell className="w-full flex flex-col text-PURPLE font-bold text-xl">
+                <div className="text-[10px] w-fit text-white font-light px-5 rounded-full py-[1px] bg-PURPLE">
                   {food.type}
                 </div>
                 {food.name}

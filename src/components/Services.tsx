@@ -173,7 +173,7 @@ const Services: React.FC = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center relative justify-center w-full h-full p-20 bg-[#4D44B5]">
+    <div className="flex flex-col items-center relative justify-center w-full h-full p-20 bg-PURPLE">
       <div className="text-[28px] font-semibold text-white border-b-2 mb-10">
         Services We Offer
       </div>
@@ -200,7 +200,7 @@ const Services: React.FC = () => {
             >
               <div className="text-start">
                 <div className="pb-2 text-[24px] items-center flex gap-5">
-                  <StackedBarChart className="fill-[#4D44B5]" />
+                  <StackedBarChart className="fill-PURPLE" />
                   {item.title}
                 </div>
                 <div className="pt-2 text-gray-500">{item.description}</div>

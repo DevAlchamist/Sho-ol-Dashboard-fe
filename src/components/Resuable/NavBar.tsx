@@ -26,7 +26,7 @@ const NavBar = () => {
         <React.Fragment key={index}>
           <Link
             href={item.Link}
-            className="block p-2 text-black/90 hover:text-[#4D44B5] font-semibold border-b-2 border-transparent transition transform duration-300 ease-in-out"
+            className="block p-2 text-black/90 hover:text-PURPLE font-semibold border-b-2 border-transparent transition transform duration-300 ease-in-out"
           >
             {item.title}
           </Link>
@@ -63,7 +63,7 @@ const NavBar = () => {
             <Link
               key={index}
               href={item.Link}
-              className="text-black/90 hover:text-[#4D44B5] font-semibold border-b-2 border-transparent transition duration-300 ease-in-out p-2 hover:border-[#4D44B5]"
+              className="text-black/90 hover:text-PURPLE font-semibold border-b-2 border-transparent transition duration-300 ease-in-out p-2 hover:border-PURPLE"
             >
               {item.title}
             </Link>
@@ -84,7 +84,7 @@ const NavBar = () => {
 
           <Button
             variant="outline"
-            className="px-4 py-3 border-[#4D44B5] hover:text-white hover:bg-[#4D44B5]"
+            className="px-4 py-3 border-PURPLE hover:text-white hover:bg-PURPLE"
           >
             Get Started
           </Button>

@@ -90,7 +90,7 @@ const Page = () => {
                 <div>Forgot Password?</div>
               </div>
               <button
-                className="bg-[#4D44B5] rounded-md text-white text-center py-4 text-[16px]"
+                className="bg-PURPLE rounded-md text-white text-center py-4 text-[16px]"
                 onClick={handleSubmit}
               >
                 Login
@@ -104,7 +104,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className="xl:flex lg:flex hidden w-full h-screen bg-[#4D44B5] items-center justify-center">
+        <div className="xl:flex lg:flex hidden w-full h-screen bg-PURPLE items-center justify-center">
           <Image
             alt="Login"
             className="xl:flex lg:flex hidden w-fit h-fit"

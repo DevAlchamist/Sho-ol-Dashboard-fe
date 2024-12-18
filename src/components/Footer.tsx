@@ -10,7 +10,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-white dark:bg-[#4D44B5]">
+    <footer className="bg-white dark:bg-PURPLE">
       <div className="container px-6 py-12 mx-auto">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
           <div className="sm:col-span-2">
@@ -100,35 +100,35 @@ const Footer = () => {
               target="_blank"
               className="flex items-center justify-center rounded-full bg-green-200 p-2 shadow-md hover:shadow-xl transition hover:-translate-y-1 transform duration-300 ease-in-out "
             >
-              <WhatsApp className="fill-[#4D44B5]/90" />
+              <WhatsApp className="fill-PURPLE/90" />
             </Link>
             <Link
               href="https://www.linkedin.com/in/shubhanshu-nayak-9332562a4/"
               target="_blank"
               className="flex items-center justify-center rounded-full bg-green-200 p-2 shadow-md hover:shadow-xl transition hover:-translate-y-1 transform duration-300 ease-in-out "
             >
-              <LinkedIn className="fill-[#4D44B5]/90" />
+              <LinkedIn className="fill-PURPLE/90" />
             </Link>
             <Link
               href="https://www.instagram.com/irl_introvert/"
               target="_blank"
               className="flex items-center justify-center rounded-full bg-green-200 p-2 shadow-md hover:shadow-xl transition hover:-translate-y-1 transform duration-300 ease-in-out "
             >
-              <Instagram className="fill-[#4D44B5]/90" />
+              <Instagram className="fill-PURPLE/90" />
             </Link>
             <Link
               href="https://x.com/irl_introvert06"
               target="_blank"
               className="flex items-center justify-center rounded-full bg-green-200 p-2 shadow-md hover:shadow-xl transition hover:-translate-y-1 transform duration-300 ease-in-out "
             >
-              <Twitter className="fill-[#4D44B5]/90" />
+              <Twitter className="fill-PURPLE/90" />
             </Link>
             <Link
               href="https://github.com/DevAlchamist/"
               target="_blank"
               className="flex items-center justify-center rounded-full bg-green-200 p-2 shadow-md hover:shadow-xl transition hover:-translate-y-1 transform duration-300 ease-in-out "
             >
-              <GitHub className="fill-[#4D44B5]/90" />
+              <GitHub className="fill-PURPLE/90" />
             </Link>
           </div>
         </div>

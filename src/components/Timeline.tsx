@@ -40,7 +40,7 @@ const timelineData = [
 const TimelineComp = () => {
   return (
     <div className="text-center w-full h-full flex-col flex items-center justify-center p-20">
-      <div className="font-bold text-[28px] border-b-2 border-[#4D44B5] mb-10">
+      <div className="font-bold text-[28px] border-b-2 border-PURPLE mb-10">
         Start With Sho-ol
       </div>
       {/* <div className="w-[90%] flex flex-col">

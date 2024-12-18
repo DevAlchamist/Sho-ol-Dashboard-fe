@@ -20,13 +20,13 @@ const Pricing = () => {
           </div>
           <div className="flex flex-wrap justify-center -mx-4">
             <div className="w-full md:w-1/2 lg:w-1/3 px-4">
-              <div className="bg-white rounded-xl relative z-10 overflow-hidden border border-[#4D44B5] shadow-md border-opacity-20 shadow-pricing py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-10">
+              <div className="bg-white rounded-xl relative z-10 overflow-hidden border border-PURPLE shadow-md border-opacity-20 shadow-pricing py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-10">
                 <span className="text-primary font-semibold text-lg block mb-4">
                   Personal
                 </span>
-                <h2 className="text-[#4D44B5] font-bold text-dark mb-5 text-[42px]">
+                <h2 className="text-PURPLE font-bold text-dark mb-5 text-[42px]">
                   $0.00
-                  <span className="text-[#4D44B5] text-base text-body-color font-medium">
+                  <span className="text-PURPLE text-base text-body-color font-medium">
                     / year
                   </span>
                 </h2>
@@ -58,7 +58,7 @@ const Pricing = () => {
                 </div>
                 <a
                   href="javascript:void(0)"
-                  className="text-black shadow-md hover:shadow-xl hover:text-[#4D44B5] transition transform duration-300 w-full block text-base font-semibold text-primary bg-transparent border border-[#D4DEFF] rounded-md text-center p-4 hover:bg-primary hover:border-primary  "
+                  className="text-black shadow-md hover:shadow-xl hover:text-PURPLE transition transform duration-300 w-full block text-base font-semibold text-primary bg-transparent border border-[#D4DEFF] rounded-md text-center p-4 hover:bg-primary hover:border-primary  "
                 >
                   Choose Personal
                 </a>
@@ -334,13 +334,13 @@ const Pricing = () => {
               </div>
             </div>
             <div className="w-full md:w-1/2 lg:w-1/3 px-4">
-              <div className=" bg-white rounded-xl relative z-10 overflow-hidden border border-[#4D44B5] shadow-md border-opacity-20 shadow-pricing py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-10 ">
+              <div className=" bg-white rounded-xl relative z-10 overflow-hidden border border-PURPLE shadow-md border-opacity-20 shadow-pricing py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-10 ">
                 <span className="text-primary font-semibold text-lg block mb-4">
                   Business
                 </span>
-                <h2 className="text-[#4D44B5] font-bold text-dark mb-5 text-[42px]">
+                <h2 className="text-PURPLE font-bold text-dark mb-5 text-[42px]">
                   $199
-                  <span className="text-[#4D44B5] text-base text-body-color font-medium">
+                  <span className="text-PURPLE text-base text-body-color font-medium">
                     / year
                   </span>
                 </h2>
@@ -379,7 +379,7 @@ const Pricing = () => {
                 </div>
                 <a
                   href="javascript:void(0)"
-                  className="text-black shadow-md hover:shadow-xl hover:text-[#4D44B5] transition transform duration-300 w-full block text-base font-semibold text-primary bg-transparent border border-[#D4DEFF] rounded-md text-center p-4 hover:bg-primary hover:border-primary  "
+                  className="text-black shadow-md hover:shadow-xl hover:text-PURPLE transition transform duration-300 w-full block text-base font-semibold text-primary bg-transparent border border-[#D4DEFF] rounded-md text-center p-4 hover:bg-primary hover:border-primary  "
                 >
                   Choose Business
                 </a>
@@ -655,13 +655,13 @@ const Pricing = () => {
               </div>
             </div>
             <div className="w-full md:w-1/2 lg:w-1/3 px-4">
-              <div className=" bg-white rounded-xl relative z-10 overflow-hidden border border-[#4D44B5] shadow-md border-opacity-20 shadow-pricing py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-10 ">
+              <div className=" bg-white rounded-xl relative z-10 overflow-hidden border border-PURPLE shadow-md border-opacity-20 shadow-pricing py-10 px-8 sm:p-12 lg:py-10 lg:px-6 xl:p-12 mb-10 ">
                 <span className="text-primary font-semibold text-lg block mb-4">
                   Professional
                 </span>
-                <h2 className="text-[#4D44B5] font-bold text-dark mb-5 text-[42px]">
+                <h2 className="text-PURPLE font-bold text-dark mb-5 text-[42px]">
                   $256
-                  <span className="text-[#4D44B5] text-base text-body-color font-medium">
+                  <span className="text-PURPLE text-base text-body-color font-medium">
                     / year
                   </span>
                 </h2>
@@ -701,7 +701,7 @@ const Pricing = () => {
                 </div>
                 <a
                   href="javascript:void(0)"
-                  className=" w-full block  hover:text-[#4D44B5] shadow-md hover:shadow-xl transform duration-300text-base font-semibold text-primary bg-transparent border border-[#D4DEFF] rounded-md text-center p-4 hover:bg-primary hover:border-primary transition text-black "
+                  className=" w-full block  hover:text-PURPLE shadow-md hover:shadow-xl transform duration-300text-base font-semibold text-primary bg-transparent border border-[#D4DEFF] rounded-md text-center p-4 hover:bg-primary hover:border-primary transition text-black "
                 >
                   Choose Professional
                 </a>

@@ -114,7 +114,7 @@ const StudentTable = () => {
                     {student.name}
                   </Link>
                 </TableCell>
-                <TableCell className="text-[#4D44B5]">{student.id}</TableCell>
+                <TableCell className="text-PURPLE">{student.id}</TableCell>
                 <TableCell className="text-[#A098AE]">{student.date}</TableCell>
                 <TableCell className="">{student.city}</TableCell>
                 <TableCell className="">{student.parentName}</TableCell>

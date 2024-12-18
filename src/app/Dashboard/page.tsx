@@ -35,7 +35,7 @@ const Page = () => {
     <div className="w-full flex">
       <div className="w-full flex flex-col gap-5 p-4">
         <div className="w-full flex items-center justify-between">
-          <div className="text-3xl text-[#4D44B5] font-bold">Dashboard</div>
+          <div className="text-3xl text-PURPLE font-bold">Dashboard</div>
           <SearchBar />
         </div>
         {loading || !checked ? (
@@ -193,7 +193,7 @@ const Page = () => {
               </div>
               <div className="w-full rounded-xl justify-between flex-col flex gap-5 items-center py-8 bg-white">
                 <div className="w-full px-8 flex justify-between items-center">
-                  <div className="font-bold text-[#4D44B5] text-xl">
+                  <div className="font-bold text-PURPLE text-xl">
                     School Finance
                   </div>
                   <div className="flex gap-3 text-sm ">

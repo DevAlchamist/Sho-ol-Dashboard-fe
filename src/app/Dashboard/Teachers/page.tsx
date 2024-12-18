@@ -106,7 +106,7 @@ const Page = () => {
   return (
     <div className="w-full flex flex-col gap-5 p-4">
       <div className="w-full flex items-center justify-between">
-        <div className="text-3xl text-[#4D44B5] font-bold">Teachers</div>
+        <div className="text-3xl text-PURPLE font-bold">Teachers</div>
         <div className="flex items-center gap-3">
           <div className="rounded-full bg-white p-2 text-[#A098AE]">
             <Bell />
@@ -126,12 +126,12 @@ const Page = () => {
       <div className="w-full flex items-center justify-between">
         <SearchBar />
         <div className="flex gap-4">
-          <Button className="bg-transparent border hover:text-white hover:bg-[#4D44B5] border-[#4D44B5] text-[#4D44B5] rounded-full">
+          <Button className="bg-transparent border hover:text-white hover:bg-PURPLE border-PURPLE text-PURPLE rounded-full">
             {" "}
             Newest
             <ArrowDown />
           </Button>
-          <Button className="hover:bg-transparent border text-white bg-[#4D44B5] border-[#4D44B5] hover:text-[#4D44B5] rounded-full">
+          <Button className="hover:bg-transparent border text-white bg-PURPLE border-PURPLE hover:text-PURPLE rounded-full">
             <Plus />
             New Teachers
           </Button>

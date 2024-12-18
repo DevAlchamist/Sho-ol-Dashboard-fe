@@ -5,7 +5,7 @@ import React from "react";
 const InfoCard = () => {
   return (
     <div className="rounded-xl overflow-hidden bg-white w-full h-full">
-      <div className="h-[140px] bg-[#4D44B5] w-full"></div>
+      <div className="h-[140px] bg-PURPLE w-full"></div>
       <div className="w-full h-full px-5">
         <div className="flex relative  w-full items-end justify-between ">
           <div className="rounded-full absolute -top-24 w-[200px] h-[200px] bg-[#C1BBEB] border-white border-x-8 border-y-8"></div>

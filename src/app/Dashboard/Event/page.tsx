@@ -8,7 +8,7 @@ const page = () => {
   return (
     <div className="w-full flex flex-col gap-5 p-4">
       <div className="w-full flex items-center justify-between">
-        <div className="text-3xl text-[#4D44B5] font-bold">Events</div>
+        <div className="text-3xl text-PURPLE font-bold">Events</div>
         <div className="flex items-center gap-5">
           <SearchBar />
           <div className="flex items-center gap-3">

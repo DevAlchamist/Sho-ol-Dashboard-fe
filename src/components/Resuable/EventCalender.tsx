@@ -106,7 +106,7 @@ const EventCalendar = () => {
           key={date}
           className={`p-4 h-[130px] w-full rounded-2xl border cursor-pointer overflow-y-auto 
             ${isCurrentMonth ? "bg-[#f7fd8]" : "bg-gray-100 text-gray-400"}
-            ${isToday ? "border-8 border-white bg-[#4D44B5] font-bold text-white" : ""}`} // Highlight today with a border
+            ${isToday ? "border-8 border-white bg-PURPLE font-bold text-white" : ""}`} // Highlight today with a border
           onClick={() => isCurrentMonth && handleOpenModal(date)}
         >
           <div className="font-semibold">{currentDay.date()}</div>
@@ -128,18 +128,18 @@ const EventCalendar = () => {
     <Card className="shadow-none rounded-xl border-none max-w-[840px] w-full">
       <CardContent>
         <div className="flex justify-between items-center p-4">
-          <div className="text-2xl text-[#4D44B5] font-bold">Calender</div>
+          <div className="text-2xl text-PURPLE font-bold">Calender</div>
           <div className="flex gap-4 items-center p-4">
             <Select
               onValueChange={handleMonthChange}
               defaultValue={currentDate.format("MMMM")}
             >
-              <SelectTrigger className="border-[#4D44B5] rounded-full text-[#4D44B5] w-fit ">
+              <SelectTrigger className="border-PURPLE rounded-full text-PURPLE w-fit ">
                 <SelectValue className="" placeholder="Select month" />
               </SelectTrigger>
               <SelectContent>
                 {months.map((month) => (
-                  <SelectItem className="text-[#4D44B5]" key={month} value={month}>
+                  <SelectItem className="text-PURPLE" key={month} value={month}>
                     {month}
                   </SelectItem>
                 ))}
@@ -149,7 +149,7 @@ const EventCalendar = () => {
               onValueChange={handleYearChange}
               defaultValue={currentDate.format("YYYY")}
             >
-              <SelectTrigger className="border-[#4D44B5] rounded-full text-[#4D44B5] w-fit ">
+              <SelectTrigger className="border-PURPLE rounded-full text-PURPLE w-fit ">
                 <SelectValue placeholder="Select year" />
               </SelectTrigger>
               <SelectContent>
