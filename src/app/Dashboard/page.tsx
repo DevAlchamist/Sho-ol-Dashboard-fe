@@ -118,7 +118,7 @@ const Page = () => {
                   </div>
                 </div>
                 <div className="flex items-center gap-5">
-                  <div className="bg-[#FCC43E] rounded-full p-3">
+                  <div className="bg-YELLOW rounded-full p-3">
                     <svg
                       width="20"
                       height="20"

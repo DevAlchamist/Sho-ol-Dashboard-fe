@@ -72,7 +72,7 @@ const ScheduleTable = () => {
         </div>
       </div>
       <div className="flex bg-white overflow-hidden rounded-r-xl">
-        <div className="w-4 rounded-l-xl bg-[#FCC43E]"></div>
+        <div className="w-4 rounded-l-xl bg-YELLOW"></div>
         <div className="p-4 gap-3 w-full flex flex-col bg-white">
           <div className="flex flex-col gap-1">
             <div className="">HTML & CSS Class</div>
