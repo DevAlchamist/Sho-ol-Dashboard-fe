@@ -52,8 +52,12 @@ export default function SidebarComponent() {
           <Link
             key={item.name}
             href={item.href}
-            className={`flex items-center gap-3 pl-3 py-2 my-1  rounded-l-full transition-colors ${
-              pathname === item.href
+            className={`flex items-center gap-3 pl-3 py-2 my-1 rounded-l-full transition-colors ${
+              item.name === "Home"
+                ? pathname === item.href
+                  ? "bg-[#f3f4ff] text-PURPLE"
+                  : "text-[#c1bbeb] hover:text-PURPLE hover:bg-[#f3f4ff]"
+                : pathname.startsWith(item.href)
                 ? "bg-[#f3f4ff] text-PURPLE"
                 : "text-[#c1bbeb] hover:text-PURPLE hover:bg-[#f3f4ff]"
             }`}

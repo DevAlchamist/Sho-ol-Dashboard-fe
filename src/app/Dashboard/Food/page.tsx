@@ -22,7 +22,7 @@ const page = () => {
                 <div className="text-[14px]">Username</div>
                 <div className="text-[10px]">Role</div>
               </div>
-              <div className="bg-violet-200 p-5 rounded-full"></div>
+              <div className="bg-GREY-2 p-5 rounded-full"></div>
             </div>
           </div>
         </div>

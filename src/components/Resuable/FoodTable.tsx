@@ -10,7 +10,14 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Button } from "@/components/ui/button";
-import { Star, MoreHorizontal, GitGraph, BarChart, ArrowBigRightDash, ArrowRight } from "lucide-react";
+import {
+  Star,
+  MoreHorizontal,
+  GitGraph,
+  BarChart,
+  ArrowBigRightDash,
+  ArrowRight,
+} from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -19,6 +26,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import Link from "next/link";
 
 const foodData = [
   {
@@ -91,7 +99,9 @@ const FoodTable = () => {
           </Button>
           <Button
             onClick={() => setFilter("Breakfast")}
-            variant={filter === "Breakfast" ? "defaultBorderLine" : "borderline"}
+            variant={
+              filter === "Breakfast" ? "defaultBorderLine" : "borderline"
+            }
           >
             Breakfast
           </Button>
@@ -114,13 +124,20 @@ const FoodTable = () => {
           {filteredFood.map((food) => (
             <TableRow key={food.id}>
               <TableCell>
-                <div className="bg-[#C1BBEB] w-[100px] rounded-xl  h-[100px]"></div>
+                <Link href={`/Dashboard/Food/${food.name}`}>
+                  <div className="bg-[#C1BBEB] w-[100px] rounded-xl  h-[100px]"></div>
+                </Link>
               </TableCell>
-              <TableCell className="w-full flex flex-col text-PURPLE font-bold text-xl">
-                <div className="text-[10px] w-fit text-white font-light px-5 rounded-full py-[1px] bg-PURPLE">
-                  {food.type}
-                </div>
-                {food.name}
+              <TableCell>
+                <Link
+                  href={`/Dashboard/Food/${food.name}`}
+                  className="w-full flex flex-col text-PURPLE font-bold text-xl"
+                >
+                  <div className="text-[10px] w-fit text-white font-light px-5 rounded-full py-[1px] bg-PURPLE">
+                    {food.type}
+                  </div>
+                  {food.name}
+                </Link>
               </TableCell>
               <TableCell>
                 <div className="flex items-center">

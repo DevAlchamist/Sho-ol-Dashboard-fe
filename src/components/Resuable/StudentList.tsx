@@ -26,9 +26,9 @@ import Link from "next/link";
 // Sample Data
 const studentsData: Student[] = [
   {
-    id: "1",
+    id: "123456789",
     name: "John Doe",
-    date: "2024-11-01",
+    date: "March 25, 2021",
     city: "New York",
     profile: "https://via.placeholder.com/150",
     contact: "123-456-7890",
@@ -36,9 +36,9 @@ const studentsData: Student[] = [
     grade: "VII C",
   },
   {
-    id: "2",
+    id: "123456787",
     name: "Jane Smith",
-    date: "2024-11-02",
+    date: "March 25, 2021",
     city: "Los Angeles",
     contact: "987-654-3210",
     profile: "https://via.placeholder.com/150",
@@ -46,10 +46,10 @@ const studentsData: Student[] = [
     grade: "VII B",
   },
   {
-    id: "3",
+    id: "123456782",
     name: "Alice Brown",
     profile: "https://via.placeholder.com/150",
-    date: "2024-11-03",
+    date: "March 25, 2021",
     city: "Chicago",
     parentName: "Ajay",
     contact: "456-789-1234",
@@ -79,10 +79,10 @@ const StudentTable = () => {
               <TableHead className="text-black text-left">Name</TableHead>
               <TableHead className="text-black text-left">ID</TableHead>
               <TableHead className="text-black text-left">Date</TableHead>
-              <TableHead className="text-black text-left">City</TableHead>
               <TableHead className="text-black text-left">
                 Parent Name
               </TableHead>
+              <TableHead className="text-black text-left">City</TableHead>
               <TableHead className="text-black text-left">Contact</TableHead>
               <TableHead className="text-black text-left">Grade</TableHead>
               <TableHead className="text-black text-center">Action</TableHead>
@@ -90,8 +90,8 @@ const StudentTable = () => {
           </TableHeader>
           <TableBody>
             {studentsData.map((student) => (
-              <TableRow key={student.id}>
-                <TableCell className="">
+              <TableRow className="" key={student.id}>
+                <TableCell className="text-center ">
                   <RadioGroup
                     value={selectedStudent}
                     onValueChange={() => handleSelect(student.id)}
@@ -99,7 +99,7 @@ const StudentTable = () => {
                     <RadioGroupItem value={student.id} />
                   </RadioGroup>
                 </TableCell>
-                <TableCell className="font-bold ">
+                <TableCell className="text-center font-bold ">
                   <Link
                     className="flex  items-center gap-2"
                     href={`/Dashboard/Students/${student.id}`}
@@ -114,13 +114,19 @@ const StudentTable = () => {
                     {student.name}
                   </Link>
                 </TableCell>
-                <TableCell className="text-PURPLE">{student.id}</TableCell>
-                <TableCell className="text-[#A098AE]">{student.date}</TableCell>
-                <TableCell className="">{student.city}</TableCell>
-                <TableCell className="">{student.parentName}</TableCell>
-                <TableCell className="">{student.contact}</TableCell>
-                <TableCell className="">{student.grade}</TableCell>
-                <TableCell className="flex justify-center">
+                <TableCell className="text-center font-bold text-PURPLE">
+                  #{student.id}
+                </TableCell>
+                <TableCell className=" text-[#A098AE]">
+                  {student.date}
+                </TableCell>
+                <TableCell className=" ">{student.parentName}</TableCell>
+                <TableCell className=" ">{student.city}</TableCell>
+                <TableCell className="text-center ">
+                  {student.contact}
+                </TableCell>
+                <TableCell className="text-center ">{student.grade}</TableCell>
+                <TableCell className="text-center flex justify-center">
                   <DropdownMenu>
                     <DropdownMenuTrigger asChild>
                       <Button variant="ghost" size="sm">

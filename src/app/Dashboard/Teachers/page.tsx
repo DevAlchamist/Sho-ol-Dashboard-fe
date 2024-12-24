@@ -17,6 +17,7 @@ import {
   Settings,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Page = () => {
@@ -119,7 +120,7 @@ const Page = () => {
               <div className="text-[14px]">Username</div>
               <div className="text-[10px]">Role</div>
             </div>
-            <div className="bg-violet-200 p-5 rounded-full"></div>
+            <div className="bg-GREY-2 p-5 rounded-full"></div>
           </div>
         </div>
       </div>
@@ -143,13 +144,6 @@ const Page = () => {
             key={index}
             className="bg-white relative h-[230px] rounded-xl w-[210px] p-4 flex flex-col gap-3 items-center justify-center"
           >
-            <Image
-              height={100}
-              width={100}
-              src={item.profile}
-              alt="img"
-              className="rounded-full h-[72px] w-[72px]"
-            />
             <div className="text-black absolute top-2 right-3">
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
@@ -164,15 +158,30 @@ const Page = () => {
                 </DropdownMenuContent>
               </DropdownMenu>{" "}
             </div>
+            <Link href={`/Dashboard/Teachers/${item.id}`}>
+              <Image
+                height={100}
+                width={100}
+                src={item.profile}
+                alt="img"
+                className="rounded-full h-[72px] w-[72px]"
+              />
+            </Link>
             <div className="font-bold text-[#303972] text-xl">{item.name}</div>
             <div className="text-[#A098AE]">{item.subject}</div>
             <div className="flex gap-3 items-center justify-center text-white">
-              <div className="bg-[#303972] rounded-full p-2">
+              <Link
+                href={`/Dashboard/Teachers/${item.id}`}
+                className="bg-PURPLE rounded-full p-2"
+              >
                 <Phone className="h-5 w-5" />
-              </div>
-              <div className="bg-[#303972] rounded-full p-2">
+              </Link>
+              <Link
+                href={`/Dashboard/Teachers/${item.id}`}
+                className="bg-PURPLE  rounded-full p-2"
+              >
                 <Mail className="h-5 w-5" />
-              </div>
+              </Link>
             </div>
           </div>
         ))}
