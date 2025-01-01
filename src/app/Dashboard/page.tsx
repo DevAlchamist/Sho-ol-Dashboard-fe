@@ -10,7 +10,7 @@ import { jellyTriangle } from "ldrs";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
-const Page = () => {
+const page = () => {
   jellyTriangle.register();
   const router = useRouter();
   const { user, fetchCurrentUser, loading } = useAppStore();
@@ -221,4 +221,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default page;
