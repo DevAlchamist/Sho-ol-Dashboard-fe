@@ -1,6 +1,6 @@
 import React from "react";
 
-const Pricing = () => {
+const Pricing = ({ title, para }: any) => {
   return (
     <div className=" w-full flex items-center justify-center flex-col">
       <div className=" pt-20 lg:pt-[120px] pb-12 lg:pb-[90px] relative z-20 overflow-hidden">
@@ -8,12 +8,11 @@ const Pricing = () => {
           <div className="flex flex-wrap -mx-4">
             <div className="w-full px-4">
               <div className="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
-                <h2 className="font-bold text-3xl sm:text-4xl md:text-[40px] text-dark mb-4">
-                  Sho-ol Pricing Plans
+                <h2 className="font-bold text-3xl sm:text-4xl md:text-[40px] text-PURPLE mb-4">
+                  {title}
                 </h2>
                 <p className="text-base text-body-color">
-                  Discover the perfect plan with Sho-ol! Affordable, flexible,
-                  and designed just for you.
+                  {para}
                 </p>
               </div>
             </div>

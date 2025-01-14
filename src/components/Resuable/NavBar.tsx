@@ -12,8 +12,6 @@ const NavBar = () => {
   };
   const NavData = [
     { title: "Home", Link: "/" },
-    { title: "Features", Link: "/Features" },
-    { title: "Dashboards", Link: "/Dashboards" },
     { title: "Pricing", Link: "/Pricing" },
     { title: "Testimonial", Link: "/Testimonial" },
     { title: "Support", Link: "/Support" },
@@ -26,7 +24,7 @@ const NavBar = () => {
         <React.Fragment key={index}>
           <Link
             href={item.Link}
-            className="block p-2 text-black/90 hover:text-PURPLE font-semibold border-b-2 border-transparent transition transform duration-300 ease-in-out"
+            className="block p-2 text-TEXT hover:text-PURPLE font-semibold border-b-2 border-transparent transition transform duration-300 ease-in-out"
           >
             {item.title}
           </Link>

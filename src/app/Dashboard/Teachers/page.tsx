@@ -142,7 +142,7 @@ const Page = () => {
         {teachersData.map((item, index) => (
           <div
             key={index}
-            className="bg-white relative h-[230px] rounded-xl w-[210px] p-4 flex flex-col gap-3 items-center justify-center"
+            className="bg-white relative h-[220px] rounded-xl w-[200px] p-4 flex flex-col gap-3 items-center justify-center"
           >
             <div className="text-black absolute top-2 right-3">
               <DropdownMenu>

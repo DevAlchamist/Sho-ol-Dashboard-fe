@@ -82,7 +82,10 @@ const HomePage = () => {
       <Services />
       <Timeline />
       <Features />
-      <Pricing />
+      <Pricing
+        title="Sho-ol Pricing Plans"
+        para="Discover the perfect plan with Sho-ol! Affordable, flexible, and designed just for you."
+      />
     </>
   );
 };

@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className="text-center">
       <div
-        className="inline-flex items-center justify-center w-24 h-24 rounded-3xl mb-8 transform transition-transform duration-300 hover:scale-105"
+        className="inline-flex items-center justify-center w-24 h-fit rounded-3xl mb-8 transform transition-transform duration-300 hover:scale-105"
         style={{
           background: colors.primary.gradient,
           boxShadow: "0 8px 32px rgba(77, 68, 181, 0.2)",

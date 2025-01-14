@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Or adjust according to your number of items */
+  animation: marquee 20s linear infinite;
+}
+
 .slider {
   height: full;
   position: relative;
